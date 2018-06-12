@@ -41,7 +41,7 @@ fprintf('AverageLoad = %.4f\n\n', AverageLoad)
 %(i)
 soma = (lambda ./ (miu - lambda)) + lambda .* d;
 soma(isnan(soma))= 0;
-w = (1/gama) *  sum(sum(soma)) * 2;
+w = (1/gama) *  sum(sum(soma)) * 2;   % w = average round-trip delay
 
 %(ii)
 ws= zeros(nT,1);
